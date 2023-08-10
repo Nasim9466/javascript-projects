@@ -1,0 +1,10 @@
+let userAgeDad = + prompt ("enter your age dad")
+console.log(userAgeDad)
+console.log(typeof userAgeDad )
+let userAgeYuorSelf = + prompt ("enter your age ")
+console.log(userAgeYuorSelf)
+console.log(typeof userAgeYuorSelf)
+let userAge = userAgeDad + userAgeYuorSelf
+console.log(userAge)
+console.log(typeof userAge)
+document.write("you and yuor father are both",userAge,"years old!")
