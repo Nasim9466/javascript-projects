@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>JsShop</title>
+  </head>
+  <body>
+    <section class="header-sec">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> Js Shop</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="/cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register.html">Register</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search-input"
+              />
+              <button
+                id="search-btn"
+                class="btn btn-outline-primary"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="slider">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide col-12 shop-main-slider"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <span class="slider-image d-block w-100" style="background-image:url('./images/cocaine2.jpg'); height:600px;background-repeat: no-repeat; background-size: cover;"> 
+              <div class="carousel-caption d-none d-md-block" style="color:rgb(99, 99, 99);">
+                <h5>High Quality Cocaine</h5>
+                <p>
+                  Our product is made out of Highest and purest materials.
+                </p>
+              </div>
+            </span>
+          </div>
+          <div class="carousel-item">
+            <span class="slider-image d-block w-100" style="background-image:url('./images/cocaine1.jpg'); height:600px; background-repeat: no-repeat; background-size: cover;"> 
+              <div class="carousel-caption d-none d-md-block" style="color:rgb(99, 99, 99);">
+                <h5>Silver Package</h5>
+                <p>
+                  It comes with finest Usage tools.
+                </p>
+              </div>
+            </span>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="product-intro mt-5 container">
+        <h3 class="section-title d-flex justify-content-center">Some of Our Products</h3>
+        <div class="card-group d-flex gap-3 flex-wrap col-10 mx-auto">
+          <div class="card">
+            <img src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/37440/s960_cocainepic.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Clean Coke</h5>
+              <p class="card-text">Made by the industries oldest players.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-center">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/37440/s960_cocainepic.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Poor Mans Coke</h5>
+              <p class="card-text">Made for the poor by the rich.</p>
+            </div>
+            <div class="card-footer  d-flex justify-content-center">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/37440/s960_cocainepic.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lemon Coke</h5>
+              <p class="card-text">Our Companies special , Coke with Lemon !</p>
+            </div>
+            <div class="card-footer d-flex justify-content-center">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="about-us mt-5">
+      <h3 class="section-title d-flex justify-content-center">About Us</h3>
+      <p class="text-center text-wrap text-break" style="    max-width: 70%;
+      margin: auto;">Lorem ipsum dolor sit amet Laboriosam, assumenda ratione cupiditate repudiandae aut voluptatum earum corrupti quisquam reiciendis distinctio, voluptas quas magni. Esse, debitis odio facilis odit iusto natus!</p>
+    </section>
+    <div class="d-flex flex-column container">
+      <section class="faq mt-5 d-flex flex-column mx-auto w-50">
+        <h3 class="section-title d-flex justify-content-center">FAQ</h3>
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Delivery</a>
+              <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Trust</a>
+              <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Payment</a>
+              <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">OD</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur laborum sint eveniet perferendis explicabo error minus quaerat ipsam dolor? Nemo dolorum deleniti, laboriosam dolor necessitatibus corporis et nam iure velit?</div>
+              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugit architecto alias tempora omnis velit amet assumenda voluptas animi fugiat consequatur possimus, modi esse impedit perspiciatis saepe, laborum quis asperiores.</div>
+              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, odio ipsam? Mollitia atque dolore voluptatem beatae alias, iste ut debitis autem aliquid facilis repudiandae? Dignissimos aperiam perspiciatis suscipit blanditiis consequatur!</div>
+              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate obcaecati atque ea deserunt sit cumque necessitatibus. Magni accusantium voluptatem, vel recusandae corrupti adipisci in consectetur quia, asperiores quam provident nobis.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <br>
+    <script async type="module" src="./js/app.js"></script>
+  </body>
+</html>

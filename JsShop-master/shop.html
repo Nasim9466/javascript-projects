@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Linking Main Stylesheet file -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- Linking Bootstrap 5 -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+    <title>Shop</title>
+</head>
+<body class="container">
+    <section class="header-sec ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"> Mobilnet</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="/cart.html">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register.html">Register</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="search-input"
+                />
+                <button
+                  id="search-btn"
+                  class="btn btn-outline-primary"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>
+    
+    <section class="main-content d-flex container">
+        <main class="mt-4 mx-3 d-flex flex-column flex-grow-1">
+            <ul class="nav nav-tabs">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sort</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Price</a></li>
+                    <li><a class="dropdown-item" href="#">modle</a></li>
+                    <li><a class="dropdown-item" href="#">date</a></li>
+                    <li><a class="dropdown-item" href="#">less price</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    </ul>
+                </li>
+                </ul>
+            <ul class="cards d-flex flex-wrap mt-2 container" >
+                <li class="list-item card m-2 w-25" style="height: 300px; height: 400px;">
+                    <img src="https://www.zdnet.com/a/img/resize/df0442de58d37347fe696c1f68b3beab3c798b19/2023/04/24/4e586f53-afa2-452d-baf4-cc7c78c2c5fb/samsung-galaxy-a54-5g.jpg?auto=webp&width=1280" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Product title</h5>
+                    <p class="card-text">
+                      Best Quality product with best price.
+                        <span class="text-success">
+                            <br><label class="productPrice">22.100ML</label>$
+                        </span>
+                    </p>
+                    <a href="#" class="btn btn-primary">Add To cart</a>
+                    </div>
+                </li>
+                <li class="list-item card m-2 w-25" style="height: 300px; height: 400px;">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Product title</h5>
+                    <p class="card-text">
+                        Best Quality product with best price.
+                        <span class="text-success">
+                            <br><label class="productPrice">43.900ML</label>$
+                        </span>
+                    </p>
+                    <a href="#" class="btn btn-primary">Add To cart</a>
+                    </div>
+                </li>
+                <li class="list-item card m-2 w-25" style="height: 300px; height: 400px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPVb_NYWkOTQmjLU-bDYZj0eHva09PLk5DQ&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Product title</h5>
+                    <p class="card-text">
+                      Best Quality product with best price.
+                        <span class="text-success">
+                            <br><label class="productPrice">21.400ML</label>$
+                        </span>
+                    </p>
+                    <a href="#" class="btn btn-primary">Add To cart</a>
+                    </div>
+                </li>
+                
+            </ul>
+            
+        </main>
+
+    </section>
+</body>
+</html>
